@@ -90,7 +90,6 @@ ul {
 .explore{
     text-decoration: none;
     background-color: #28B9CD;
-
     color: black;
     padding: 1rem 1.2rem;
     margin-top: 3rem;
@@ -129,48 +128,85 @@ ul {
     font-size: 62px;
 }
 
-
 .second{
-    height: 100vh;
+    /* height: 140vh; */
     display: flex;
     width: 100%;
     border: 2px solid black;
-    padding: 2rem 5rem;
+    padding: 1rem 4rem;
 }
 .courses{
-    border: 2px solid black;
+    margin-left: 1.5rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    /* height: 120vh; */
-    /* background-color: #000; */
 }
 .course-card{
-    border: 2px solid saddlebrown;
+    border: 2px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 15vw;
     margin: 15px;
+    box-shadow: 0 1px 1px 1px gray;
+
 }
 
 .card-img{
     width: 100%;
     height: 45%;
 }
+.card-rating{
+    display: block;
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.card-rating span{
+    border: 2px solid black;
+    display: inline-block;
+    color: #ffffff;
+    margin-right: 1rem;
+    background-color: rgb(35, 158, 41);
+    border-radius: 5px;
+    padding: 0.4rem;
+}
 
+#star{
+    height: 1rem;
+    width: 1rem;
+    filter: invert();
+    
+}
 
 .card-heading{
     font-size: 18px;
-    padding: 0.5rem;
+    width: 85%;
+   margin: auto;
+   margin-top: 1rem;
+
 }
 .card-owner{
+    display: flex;
     color: #28B9CD;
+    width: 85%;
+    align-items: center;
+    margin-top: 1rem;
+}
+.owner-photo{
+    border: 2px solid black;
+    margin-right: 2px;
+    width: 1.5rem;
+    text-align: center;
+    height: 1.5rem;
+    border-radius: 15px;
+    background-color: #410051;
+   
 }
 
 .card-dur{
     display: flex;
-    width: 80%;
+    width: 85%;
     margin: auto;
     margin-top: 1rem;
     justify-content: space-between;
@@ -179,9 +215,54 @@ ul {
 .card-btn{
     border: 2px solid #28B9CD;
     display: block;
-    width: 80%;
+    width: 85%;
     text-align: center;
     margin: 1rem auto;
     padding: 0.5rem 2rem;
     color: #28B9CD;
+}
+
+.third{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 4rem;
+    background-color: #410051;
+    
+
+}
+.third-content{
+    border: 2px solid khaki;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+.group{
+    display: flex;
+    width:40vw;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+.group-img{
+    margin: 1rem;
+}
+
+.third p{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.third-btn{
+    text-decoration: none;
+    background-color: #28B9CD;
+    color: black;
+    padding: 1rem 1.2rem;
+    margin-top: 3rem;
+    border-radius: 2px;
+    width: 10vw;
 }
