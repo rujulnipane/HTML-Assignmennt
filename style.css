@@ -27,14 +27,12 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 1.2rem;
-    border: 2px solid black;
     z-index: 2;
 }
 
 .list {
     display: flex;
     width: 55vw;
-    border: 2px solid black;
     justify-content: space-between;
     margin-left: 10rem;
 
@@ -44,7 +42,6 @@ ul {
     display: flex;
    justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
     width: 15vw;
     padding: 0 1.2rem;
 
@@ -64,7 +61,6 @@ ul {
     cursor: pointer;
 }
 .profile-img{
-    border: 2px solid black;
     display: block;
     height: 5vh;
     width: 5vh;
@@ -76,8 +72,7 @@ ul {
 }
 
 .content{
-    border: 2px solid gainsboro;
-    height: 70vh;
+    height: 81vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,10 +90,98 @@ ul {
 .explore{
     text-decoration: none;
     background-color: #28B9CD;
-    border: 2px solid black;
+
     color: black;
     padding: 1rem 1.2rem;
     margin-top: 3rem;
     border-radius: 2px;
 }
 
+.first{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 5rem;
+   align-items: flex-start;
+}
+.head{
+    width: 30vw;
+    font-size: 16px;
+}
+.first img{
+    width: 20vw;
+    height: 100%;
+    margin-right: 1rem;
+}
+.first p{
+    width: 30vw;
+    color: #000000;
+}
+
+.first-color{
+    color: #28B9CD;
+    font-size: 62px;
+}
+
+.second-color{
+    color: #000;
+    font-size: 62px;
+}
+
+
+.second{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    padding: 2rem 5rem;
+}
+.courses{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* height: 120vh; */
+    /* background-color: #000; */
+}
+.course-card{
+    border: 2px solid saddlebrown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+    margin: 15px;
+}
+
+.card-img{
+    width: 100%;
+    height: 45%;
+}
+
+
+.card-heading{
+    font-size: 18px;
+    padding: 0.5rem;
+}
+.card-owner{
+    color: #28B9CD;
+}
+
+.card-dur{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.card-btn{
+    border: 2px solid #28B9CD;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    color: #28B9CD;
+}
