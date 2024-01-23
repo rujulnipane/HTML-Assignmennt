@@ -15,6 +15,7 @@ html{
     font-size: 16px;
 }
 
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -28,8 +29,9 @@ ul {
 }
 
 .header {
-    min-height: 100vh;
-    background-image: linear-gradient(to right, rgb(65, 0, 81, 0.5), rgba(65, 0, 81, 0.5)), url(./Images/header.png);
+
+    /* min-height: 100vh; */
+    background-image: linear-gradient(to right, rgb(65, 0, 81, 0.6), rgba(65, 0, 81, 0.5)), url(./Images/header.png);
     background-size: cover;
 }
 
@@ -38,6 +40,8 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 1.2rem;
+    height: 80px;
+    align-items: center;
 }
 
 .list {
@@ -85,7 +89,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 7rem;
+    padding: 2rem 7rem;
 }
 
 .content h1 {
@@ -113,14 +117,12 @@ ul {
     align-items: flex-start;
 }
 
-.head {
-    width: 30vw;
-    font-size: 16px;
-}
+
 
 .first img {
-    width: 20vw;
-    height: 100%;
+    width: 321px;
+
+    height: 428px;
     margin-right: 1rem;
 }
 
@@ -153,19 +155,19 @@ ul {
 }
 
 .course-card {
-    border: 1px solid rgb(161, 159, 159);
+    /* border: 0.2px solid rgb(161, 159, 159); */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 15vw;
     margin: 15px;
-    box-shadow: 0.5px 1px 1px rgb(180, 179, 179);
+    box-shadow: 0.5px 0.5px 0.5px rgb(180, 179, 179);
 
 }
 
 .card-img {
     width: 100%;
-    height: 45%;
+    height: 35%;
 }
 
 .card-rating {
@@ -176,7 +178,7 @@ ul {
 }
 
 .card-rating span {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: inline-block;
     color: #ffffff;
     margin-right: 1rem;
@@ -205,18 +207,20 @@ ul {
     color: #28B9CD;
     width: 85%;
     align-items: center;
+    font-size: 14px;
     margin-top: 1rem;
+    font-weight: 500;
 }
 
 .owner-photo {
     border: 2px solid black;
-    margin-right: 2px;
+    margin-right: 5px;
     width: 1.5rem;
     text-align: center;
     height: 1.5rem;
     border-radius: 50%;
     background-color: #410051;
-
+    /* font-weight: bold; */
 }
 
 .card-dur {
@@ -225,6 +229,8 @@ ul {
     margin: auto;
     margin-top: 1rem;
     justify-content: space-between;
+    color: gray;
+    font-size: 12px;
 }
 
 .card-btn {
@@ -312,14 +318,15 @@ ul {
     width: 100%;
     display: flex;
     padding: 4rem 3rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .fourth-img {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: flex;
 }
 
 .fourth-card {
@@ -355,8 +362,9 @@ ul {
 
 .fourth-info p {
     padding-left: 1rem;
-    font-size: 1.375;
+    font-size: 1.375rem;
     border-left: 5px solid #28B9CD;
+    margin: 20px 0;
 }
 
 .review-section {
@@ -441,6 +449,7 @@ ul {
     /* border: var(--border-try); */
     width: 30%;
     padding: 0rem 1rem;
+    font-weight: 500;
 }
 
 .add h4 {
@@ -502,7 +511,7 @@ ul {
         font-size: 12px;
     }
     .logo {
-        display: block;
+        display: inline-block;
         margin: auto;
     }
 
@@ -612,6 +621,7 @@ ul {
         margin: 0 0 0 0;
         justify-content: center;
         height: 24vh;
+        margin: 30px 0;
     }
 
     .fourth-info p {
@@ -664,6 +674,26 @@ ul {
     .footer {
         min-height: 98vh;
     }
+
+    .first img{
+        /* height: 100vh; */
+    }
+    /* .header{
+        height: auto;
+    } */
+    .content{
+        padding: 40px;
+    }
+
+    .card-img {
+        width: 80%;
+        height: 25%;
+    }
+    .card-heading{
+        font-size: 16px;
+        height: 25%;
+        overflow: hidden;
+    }
 }
 
 
@@ -676,6 +706,9 @@ ul {
         margin-top: 20px;
     }
 
+    .content{
+        height: auto;
+    }
     .content h1 {
         font-size: 4rem;
     }
@@ -709,18 +742,25 @@ ul {
     }
 
     .first {
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         min-height: 40vh;
+        padding-top: 40px;
     }
 
     .first img {
-        width: 25vw;
+        width: 23vw;
         margin: 0;
     }
 
+    .head{
+        width: 40vw;
+        margin: 0 50px;
+        /* align-self: center; */
+    }
+
     .first p {
-        width: 100%;
+        width: 70%;
     }
 
     .second,
@@ -755,11 +795,11 @@ ul {
         display: block;
         margin: auto;
         text-align: center;
-        width: 20vw;
+        width: 30vw;
     }
 
     .fourth-info {
-        height: 10vh;
+        height: 40vh;
     }
 
     .courses{
@@ -771,9 +811,13 @@ ul {
     }
 
     .fourth-img {
+        display: flex;
         flex-direction: row;
-        align-items: center;
-        /* min-height: 175vh; */
+        /* height: 20vh; */
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .course-card{
@@ -782,17 +826,17 @@ ul {
     }
     .second{
         padding: 1rem;
-        border: var(--border-try);
+        /* border: var(--border-try); */
     }
 
 
     .first{
         padding: 1.5rem;
-        border: var(--border-try);
+        /* border: var(--border-try); */
     }
 
     .fourth{
-        border: var(--border-try);
+        /* border: var(--border-try); */
         padding: 1.5rem;
     }
     .review-section{
@@ -808,6 +852,10 @@ ul {
     .third-content{
         margin: 0%;
         padding: 0;
+    }
+
+    .group-img figcaption{
+        font-size: 15px;
     }
 
 }
@@ -836,12 +884,12 @@ ul {
 
 }
 
-@media (max-width:735px) {
+/* @media (max-width:735px) {
     .fourth-img{
         display: flex;
         flex-direction: column;
     }
-}
+} */
 
 @media (max-width:530px){
     .profile, .list{
@@ -851,6 +899,154 @@ ul {
     html{
         font-size: 13px;
     }
+    .logoheader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu, #cart, .logo{
+        display: inline-block;
+    }
+    #menu,#cart{
+        filter: invert();
+    }
+    #cart{
+        height: 25px;
+    }
+    .logo{
+        width: 50vw;
+        margin-left: 50px;
+    }
 
+}
+
+@media (max-width:400px){
+    .content h1{
+        font-size: 40px;
+    }
+
+    .first-color,
+    .second-color,
+    .white-head {
+        font-size: 32px;
+    }
+
+    .group-img>figcaption{
+        font-size: 20px;
+    }
+}
+@media (min-width:600px){
+    .content h1{
+        font-size: 50px;
+    }
+
+    .first-color,
+    .second-color,
+    .white-head {
+        font-size:42px;
+    }
+    .cart-heading{
+        font-size: 17px;
+    }
+
+    .group-img > figcaption{
+        font-size: 25px;
+    }
+
+}
+@media (min-width:1000px){
+    .content h1{
+        font-size: 60px;
+    }
+
+    .first-color,
+    .second-color,
+    .white-head {
+        font-size: 52px;
+    }
+}
+@media (min-width:1350px){
+    .content h1{
+        font-size: 72px;
+    }
+
+    .first-color,
+    .second-color,
+    .white-head {
+        font-size: 62px;
+    }
+
+}
+
+@media (max-width:600px){
+    .footer-content{
+        flex-direction: column;
+        padding: 0 30px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .add{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+@media (max-width:300px){
+    .logo{
+        width: 40vw;
+        margin: 0%;
+        align-items: center;
+    }
+    .logo a img{
+        width: 90%;
+    }
+    #cart{
+        height: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    .courses {
+        margin: 0%;
+        padding: 0%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-left: 0;
+    }
+    .course-card{
+        width: 45vw;
+    }
+}
+
+@media (max-width:290px){
+    .courses{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .course-card{
+        width: 100%;
+    }
+
+    .content h1{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+
+    .first-color,
+    .second-color,
+    .white-head {
+        font-size:20px;
+    }
+
+    .fourth-card h3{
+        font-size: 16px;
+    }
 
 }
