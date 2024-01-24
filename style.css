@@ -119,19 +119,24 @@ ul {
     text-decoration: none;
     background-color: #28B9CD;
     color: black;
-    padding: 1rem 1.2rem;
+    /* padding: 1rem 1.2rem; */
     margin-top: 3rem;
     border-radius: 2px;
+    padding: 20px 0;
     font-weight: 500;
+    height: 60px;
+    width: 220px;
+    font-weight: 500;
+    text-align: center;
 }
 
 .first {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     min-height: 80vh;
-    padding: 4rem;
+    padding: 110px;
     align-items: flex-start;
 }
 
@@ -285,16 +290,16 @@ ul {
     display: flex;
     flex-direction: column;
     margin: 2rem;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
     width: 431px;
 }
 
 .group {
     display: flex;
-    /* width: 50vw; */
+    width: 45vw;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2rem;
+    /* margin: 2rem; */
 }
 
 .group-img {
@@ -302,21 +307,29 @@ ul {
     width: 15vw;
     width: 207px;
     height: 276px;
-    margin: 2px;
-    margin-bottom: 1rem;
+    margin: 30px;
+    /* margin-bottom: 1rem; */
 }
 
-.group-img>figcaption {
+.group-img figcaption {
     position: absolute;
-    bottom: 4px;
-    color: #ffffff;
+    bottom: 0px;
     font-size: 1.875rem;
-    width: 90%;
-    background: #040404;
-    opacity: 0.5;
+    width: 207px;
+    height: 60px;
+    color: #ffffff;
+    padding: 15px;
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: 20px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));  
+}
 
+.group-img figcaption p{
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 30px;
+    
 }
 
 .third p {
@@ -324,6 +337,8 @@ ul {
     font-size: 24px;
     line-height: 32px;
     margin: 2rem 0;
+    font-weight: 400;
+    width: 395px;
 }
 
 .third-btn {
@@ -336,10 +351,10 @@ ul {
     width: 180px;
     height: 50px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.third-btn:hover {
+/* .third-btn:hover {
     text-decoration: none;
     background-color: #410051;
     color: black;
@@ -347,12 +362,12 @@ ul {
     margin-top: 2rem;
     border-radius: 2px;
     width: 10vw;
-}
+} */
 
 .fourth {
-    width: 100%;
     display: flex;
-    padding: 4rem 3rem;
+    padding: 7rem 5rem;
+    justify-content: center;
     /* min-height: 100vh; */
 }
 
@@ -361,17 +376,19 @@ ul {
     grid-template-columns: 1fr 1fr;
     flex-direction: column;
     flex-wrap: wrap; */
+    width: 47vw;
     display: flex;
 }
 
 .fourth-card {
-    margin: 0 1rem;
-    margin-bottom: 2rem;
+    margin: 0 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .fourth-card p {
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: 500;
+    margin: 15px 0;
 }
 
 .fourth-card h3 {
@@ -382,6 +399,7 @@ ul {
 .fourth-content {
     /* border: var(--border-try); */
     /* height: 50%; */
+    width: 35vw;
     padding-left: 1rem;
 }
 
@@ -392,19 +410,20 @@ ul {
     /* width: 40%; */
     flex-direction: column;
     justify-content: space-between;
-    height: 30vh;
+    height: 300px;
 }
 
 .fourth-info p {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     font-size: 1.375rem;
-    border-left: 5px solid #28B9CD;
+    border-left: 10px solid #28B9CD;
     margin: 20px 0;
+    line-height: 28px;
 }
 
 .review-section {
     /* border: var(--border-try); */
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
 }
 
 .review {
@@ -414,18 +433,19 @@ ul {
     align-items: center;
     justify-content: space-around;
     height: 174px;
-    width: 1089px;
+    width: 80vw;
     margin: 30px auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-left: 10px solid #28B9CD;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
-
+    padding: 0 20px;
 }
 
 .review-content {
     width: 80%;
     font-size: 1rem;
     line-height: 28px;
+    font-weight: 500;
 }
 
 .review-head {
@@ -475,8 +495,8 @@ ul {
     /* border: var(--border-try); */
     display: flex;
     width: 80vw;
-    padding: 1rem;
-    justify-content: space-between;
+    padding: 2rem;
+    justify-content: space-around;
     margin: 2rem auto;
 }
 
@@ -498,7 +518,7 @@ ul {
 .add h4 {
     font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .add p {
@@ -510,8 +530,8 @@ ul {
 }
 
 .contact-info p svg {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     margin-right: 10px;
 }
 
@@ -520,7 +540,7 @@ ul {
 }
 
 .footer-head {
-    margin-left: 10rem;
+    margin-left: 13rem;
 }
 
 .white-head {
